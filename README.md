@@ -99,7 +99,7 @@
   </div>
 
   <footer>
-    Created with ❤️ by Karan Vora | For students of IR, wherever they are.
+    Created with ❤️  by Karan Vora | For students of IR, wherever they are.
   </footer>
 </body>
 </html>
