@@ -1,4 +1,4 @@
-# Dr. Karan Vora
+# Karan Vora
 
 **Assistant Professor | Digital & Public Diplomacy | Indian Foreign Policy & IR Specialist**
 
