@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CS Assignments — Karan Vora</title>
+<style>
+  :root{--bg:#f7f7f8;--card:#fff;--text:#222;--muted:#6b7280}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  header{background:#111;color:#fff;padding:40px 20px;text-align:center}
+  nav{background:#181818;display:flex;gap:16px;justify-content:center;padding:10px 12px}
+  nav a{color:#e8e8e8;text-decoration:none;padding:8px 12px;border-radius:8px}
+  nav a:hover,nav a[aria-current="page"]{background:#262626}
+  main{max-width:980px;margin:28px auto;padding:0 16px;display:grid;gap:24px}
+  .card{background:var(--card);border:1px solid #eee;border-radius:14px;padding:20px;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+  h1,h2{margin:0 0 12px}
+  h1{font-size:1.9rem}
+  h2{font-size:1.25rem}
+  pre{background:#f4f4f4;padding:10px;overflow-x:auto;border-radius:8px}
+  img{max-width:100%;border-radius:10px;display:block;margin:10px 0}
+  .muted{color:var(--muted)}
+  footer{text-align:center;padding:24px 12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>CS Assignments Collection</h1>
+  <p class="muted">Nine assignments compiled in one place</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="assignments.html" aria-current="page">Assignments</a>
+</nav>
+<main>
+
+  <section class="card" id="cs1">
+    <h2>1) Assignment CS 1: Google Sheet & App Scripts</h2>
+    <p><strong>Link:</strong> <a href="https://docs.google.com/spreadsheets/d/1La5JxdDciQslw2UomWwI1tgcmZoRJoCzvQ9dW_6BUCg/edit?usp=sharing" target="_blank">View Spreadsheet</a></p>
+    <p>Summary: Generated data → used LLM to generate code → executed in Google App Scripts → automated results.</p>
+    <pre><code>// Highlights scores based on thresholds
+function highlightScores() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const range = sheet.getRange("B2:F101");
+  const values = range.getValues();
+  const backgrounds = [];
+  for (let i = 0; i &lt; values.length; i++) {
+    const rowColors = [];
+    for (let j = 0; j &lt; values[i].length; j++) {
+      const score = values[i][j];
+      if (score &lt; 40) rowColors.push("#f4cccc");
+      else if (score &gt; 80) rowColors.push("#d9ead3");
+      else rowColors.push(null);
+    }
+    backgrounds.push(rowColors);
+  }
+  range.setBackgrounds(backgrounds);
+}
+</code></pre>
+  </section>
+
+  <section class="card" id="cs2">
+    <h2>2) Assignment CS 2: Exit Ticket</h2>
+    <p><strong>Link:</strong> <a href="https://forms.gle/LrF4RdppsxmqK1hBA" target="_blank">Google Form</a></p>
+    <p>Highlights: Most students understood more than half; engagement rating <strong>4.31/5</strong>. Students want India-centric examples, key thinkers, and more discussion time.</p>
+  </section>
+
+  <section class="card" id="cs3">
+    <h2>3) Assignment CS 3: Lesson Plan using LLMs</h2>
+    <p><strong>Topic:</strong> Constructivism in IR · <em>“Ideas matter as much as weapons do.”</em></p>
+    <p>Objectives: define Constructivism; contrast with Realism/Liberalism; apply to Pokhran 1998; reflect on social construction.</p>
+  </section>
+
+  <section class="card" id="cs4">
+    <h2>4) Assignment CS 4: GitHub Website</h2>
+    <p><strong>Link:</strong> <a href="https://karanvoracm.github.io/karanvora.cm/" target="_blank">View site</a></p>
+    <p>LLM-assisted profile site: summary, publications, projects, teaching, conferences.</p>
+  </section>
+
+  <section class="card" id="cs5">
+    <h2>5) Assignment CS 5: What Students Know — Prakash Hegade Session</h2>
+    <p><strong>Threshold Concept:</strong> Constructivism in IR · Known: Identity/Belief/Values · Unknown: Ideational & language power.</p>
+    <p>Case: Digital India vs China’s platform controls; mapped via Bloom, Fink, SOLO.</p>
+  </section>
+
+  <section class="card" id="cs6">
+    <h2>6) Assignment CS 6: Research using AI</h2>
+    <p><strong>Topic:</strong> Social Media Analytics · <strong>Tool:</strong> <a href="https://www.researchrabbitapp.com/collection/public/N6KGJN15Z8" target="_blank">Research Rabbit collection</a></p>
+    <p>Covered popularity prediction, sentiment frameworks, API/data politics, campaign analytics, GDPR.</p>
+  </section>
+
+  <section class="card" id="cs7">
+    <h2>7) Assignment CS 7: Doing a Project vs Learning through a Project</h2>
+    <p>Reflection from Chandidas Mahavidyalaya: a student interviewed the local Panchayat Pradhan; authentic learning beyond copied files.</p>
+  </section>
+
+  <section class="card" id="cs8">
+    <h2>8) Assignment CS 8: Learning Story Using Kolb’s Cycle</h2>
+    <p>Shift from quick-fix answers to deeper learning: scenario-based analysis, Think–Pair–Share, role reversal, reflective questions.</p>
+  </section>
+
+  <section class="card" id="cs9">
+    <h2>9) Assignment CS 9: Napkin.AI Illustrations</h2>
+    <p><strong>Tool:</strong> <a href="http://napkin.ai" target="_blank">Napkin.AI</a> · Three visuals embedded below.</p>
+    <figure>
+      <img src="assets/powers-of-mp.png" alt="Powers and Functions of an Indian MP" />
+      <figcaption class="muted">Powers & Functions of an Indian MP</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/realist-vs-constructivist.png" alt="Comparing Realist and Constructivist Perspectives" />
+      <figcaption class="muted">Realism vs Constructivism — quick visual</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/indian-constitution-foundations.png" alt="Foundations of the Indian Constitution" />
+      <figcaption class="muted">Key terms from the Preamble</figcaption>
+    </figure>
+  </section>
+
+</main>
+<footer>
+  © 2025 Karan Vora · Powered by GitHub Pages
+</footer>
+</body>
+</html>
