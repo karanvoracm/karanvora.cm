@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS Assignments Collection – Karan Vora</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    header {
+        background-color: #1a1a1a;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.2em;
+    }
+    main {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        color: #222;
+    }
+    pre {
+        background: #f4f4f4;
+        padding: 10px;
+        overflow-x: auto;
+        border-radius: 4px;
+    }
+    code {
+        font-family: monospace;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    img {
+        max-width: 100%;
+        margin: 10px 0;
+        border-radius: 4px;
+    }
+    footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #777;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>📚 CS Assignments Collection</h1>
+</header>
+
+<main>
+
+<h2>1️⃣ Assignment CS 1: Google Sheet and App Scripts</h2>
+<p><strong>🔗 Link to Spreadsheet:</strong> <a href="https://docs.google.com/spreadsheets/d/1La5JxdDciQslw2UomWwI1tgcmZoRJoCzvQ9dW_6BUCg/edit?usp=sharing" target="_blank">View Spreadsheet</a></p>
+<p>This activity showcased the use of Google App Scripts for data analysis and automation in Google Sheets.</p>
+<p><strong>Summary of Activity:</strong></p>
+<ul>
+<li>Generated data</li>
+<li>Used LLM to generate code</li>
+<li>Executed code on Google App Scripts</li>
+<li>Produced automated results</li>
+</ul>
+
+<pre><code>// Example function
+function highlightScores() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const range = sheet.getRange("B2:F101");
+  const values = range.getValues();
+  const backgrounds = [];
+
+  for (let i = 0; i &lt; values.length; i++) {
+    const rowColors = [];
+    for (let j = 0; j &lt; values[i].length; j++) {
+      const score = values[i][j];
+      if (score &lt; 40) {
+        rowColors.push("#f4cccc");
+      } else if (score &gt; 80) {
+        rowColors.push("#d9ead3");
+      } else {
+        rowColors.push(null);
+      }
+    }
+    backgrounds.push(rowColors);
+  }
+  range.setBackgrounds(backgrounds);
+}
+</code></pre>
+
+<h2>2️⃣ Assignment CS 2: Exit Ticket</h2>
+<p><strong>🔗 Link to Form:</strong> <a href="https://forms.gle/LrF4RdppsxmqK1hBA" target="_blank">View Google Form</a></p>
+<p>Key takeaways:</p>
+<ul>
+<li>Most students understood more than half of the topic; some understood it completely.</li>
+<li>Average engagement rating: <strong>4.31 / 5</strong></li>
+<li>Common queries included: <em>"Why is theory important?"</em>, <em>"Is India Realist?"</em></li>
+</ul>
+
+<h2>3️⃣ Assignment CS 3: Lesson Plan using LLMs</h2>
+<p><strong>Topic:</strong> Constructivism in International Relations</p>
+<p><strong>Theme:</strong> "Ideas matter as much as weapons do."</p>
+
+<h2>4️⃣ Assignment CS 4: GitHub Website</h2>
+<p><strong>🔗 Link:</strong> <a href="https://karanvoracm.github.io/karanvora.cm/" target="_blank">View GitHub Page</a></p>
+<p>LLM-assisted creation of a personal GitHub page highlighting professional summary, research publications, projects & teaching materials, and conference presentations.</p>
+
+<h2>5️⃣ Assignment CS 5: What Students Know – Prakash Hegade Session</h2>
+<p><strong>Threshold Concept:</strong> Constructivism in IR</p>
+<p><strong>Known:</strong> Identity, belief, values</p>
+<p><strong>Unknown:</strong> Power beyond force, ideas and norms, language as power.</p>
+
+<h2>6️⃣ Assignment CS 6: Research using AI</h2>
+<p><strong>Topic:</strong> Social Media Analytics</p>
+<p><strong>Tool:</strong> <a href="https://www.researchrabbitapp.com/collection/public/N6KGJN15Z8" target="_blank">Research Rabbit Collection</a></p>
+
+<h2>7️⃣ Assignment CS 7: Doing a Project vs Learning Through a Project</h2>
+<p>Reflected on difference between simply submitting a project and actually learning from it.</p>
+
+<h2>8️⃣ Assignment CS 8: Kolb’s Cycle – Learning Story</h2>
+<p>Experience with online teaching at The BESC that led to a change in teaching strategy to focus on deeper learning.</p>
+
+<h2>9️⃣ Assignment CS 9: Napkin.AI Illustrations</h2>
+<p><strong>Tool:</strong> <a href="http://napkin.ai" target="_blank">Napkin.AI</a></p>
+<p><strong>Outputs:</strong> 3 visuals created to support political science learning.</p>
+<img src="assets/powers-of-mp.png" alt="Powers and Functions of an Indian MP">
+<img src="assets/realist-vs-constructivist.png" alt="Comparing Realist and Constructivist Perspectives">
+<img src="assets/indian-constitution-foundations.png" alt="Foundations of the Indian Constitution">
+
+</main>
+
+<footer>
+    © 2025 Karan Vora | Powered by GitHub Pages
+</footer>
+
+</body>
+</html>
